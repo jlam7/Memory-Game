@@ -1,0 +1,32 @@
+.landingPage {
+	text-align: center;
+	height: 100vh;
+}
+
+.gamePage {
+	height: 100vh;
+}
+
+#buttons {
+	display: flex;
+	justify-content: space-around;
+}
+
+#displayScore {
+	display: flex;
+	justify-content: center;
+	font-size: 3em;
+}
+
+#game {
+	text-align: center;
+	margin-top: 10px;
+}
+
+#game div {
+	border: 1px solid black;
+	width: 18%;
+	height: 200px;
+	margin: 10px;
+	display: inline-block;
+}
