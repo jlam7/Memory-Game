@@ -35,10 +35,10 @@ let colorSet = [
 	'#6d0505', //dark burgundy - 4
 	'#Ce0f28', //crimson - 5
 	'#Fff706', //yellow - 6
-	'#202b03', //pine tree - 7
+	'#258007', //japanese laurel - 7
 	'#Ade518', //inch worm - 8
 	'#767a69', //limed ash - 9
-	'#1f2323', //shark - 10
+	'#060606', //cod gray - 10
 	'#C09e0c', //buddha gold - 11
 	'#F7704d', //carnation - 12
 	'#Ff3706' //scarlet - 13
