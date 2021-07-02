@@ -10,20 +10,57 @@ startBtn.addEventListener('click', function() {
 //https://stackoverflow.com/questions/11715646/scroll-automatically-to-the-bottom-of-the-page
 
 // randomize colors
+// function randomizeColors(num) {
+// 	let counter = 0;
+// 	let r;
+// 	let g;
+// 	let b;
+// 	let randomColor;
+// 	while (counter < num / 2) {
+// 		r = Math.floor(Math.random() * 256);
+// 		g = Math.floor(Math.random() * 256);
+// 		b = Math.floor(Math.random() * 256);
+// 		randomColor = `rgb(${r},${g},${b})`;
+// 		COLORS.push(randomColor);
+// 		COLORS.push(randomColor);
+// 		counter++;
+// 	}
+// }
+
+let colorSet = [
+	'#2596be', //eastern blue - 0
+	'#2912d6', //persian blue - 1
+	'#840975', //cardinal pink - 2
+	'#Ef05da', //purple pizzazz - 3
+	'#6d0505', //dark burgundy - 4
+	'#Ce0f28', //crimson - 5
+	'#Fff706', //yellow - 6
+	'#202b03', //pine tree - 7
+	'#Ade518', //inch worm - 8
+	'#767a69', //limed ash - 9
+	'#1f2323', //shark - 10
+	'#C09e0c', //buddha gold - 11
+	'#F7704d', //carnation - 12
+	'#Ff3706' //scarlet - 13
+];
+
+let numberSet = [];
+function createNumberSet(num) {
+	for (let i = 0; i < num; i++) {
+		numberSet.push(i);
+	}
+}
+
+createNumberSet(colorSet.length);
+
 function randomizeColors(num) {
-	let counter = 0;
-	let r;
-	let g;
-	let b;
-	let randomColor;
-	while (counter < num / 2) {
-		r = Math.floor(Math.random() * 256);
-		g = Math.floor(Math.random() * 256);
-		b = Math.floor(Math.random() * 256);
-		randomColor = `rgb(${r},${g},${b})`;
-		COLORS.push(randomColor);
-		COLORS.push(randomColor);
-		counter++;
+	let randomNum;
+	shuffle(numberSet);
+
+	for (let i = 0; i < num / 2; i++) {
+		randomNum = numberSet[i];
+		COLORS.push(colorSet[randomNum]);
+		COLORS.push(colorSet[randomNum]);
 	}
 }
 
